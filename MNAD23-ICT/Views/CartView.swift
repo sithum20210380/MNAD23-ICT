@@ -27,7 +27,7 @@ struct CartView: View {
                                             .font(.subheadline)
                                             .foregroundColor(.secondary)
                                         Spacer()
-                                        Text("\(viewModel.calculatePurchasedItems(item: item))")
+                                        Text("\(viewModel.calculatePurchasedItems(item: item), specifier: "%.2f")")
                                     }
                                 }
                             }

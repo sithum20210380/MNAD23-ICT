@@ -22,8 +22,4 @@ final class CartViewModel: ObservableObject {
             total += calculatePurchasedItems(item: item)
         }
     }
-    
-    func saveTotal() {
-        previousTotal = total
-    }
 }
